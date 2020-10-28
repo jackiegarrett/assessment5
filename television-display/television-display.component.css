@@ -1,0 +1,12 @@
+div {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.smart {
+    color: blue
+}
+
+.notsmart {
+    color: red;
+}

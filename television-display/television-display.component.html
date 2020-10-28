@@ -1,0 +1,14 @@
+<div
+    *ngFor="let television of televisions">
+    <p>Name: {{television.name}}</p>
+    <p>Size: {{television.size}}</p>
+    <p [ngClass]=
+        "{
+            'notsmart': television.smart === false,
+            'smart': television.smart
+    }">
+    Smart: {{television.smart}}</p>
+
+    <button (click)="removeTV(television.name)">X</button>
+</div>
+
